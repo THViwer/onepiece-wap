@@ -1,0 +1,22 @@
+[
+  {
+    "id": "user.username",
+    "defaultMessage": "用户名"
+  },
+  {
+    "id": "user.password",
+    "defaultMessage": "密码"
+  },
+  {
+    "id": "user.entryUsername",
+    "defaultMessage": "请输入用户名"
+  },
+  {
+    "id": "user.usernameErr",
+    "defaultMessage": "用户名错误(4-12位数字和字母)"
+  },
+  {
+    "id": "user.entryPassword",
+    "defaultMessage": "请输入密码"
+  }
+]

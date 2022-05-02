@@ -1,0 +1,74 @@
+[
+  {
+    "id": "funds.submit",
+    "defaultMessage": "提交"
+  },
+  {
+    "id": "common.name",
+    "defaultMessage": "姓名"
+  },
+  {
+    "id": "funds.amountThanTen",
+    "defaultMessage": "请输入大于10金额"
+  },
+  {
+    "id": "funds.amountThanZero",
+    "defaultMessage": "请输入大于0金额"
+  },
+  {
+    "id": "funds.entryAmount",
+    "defaultMessage": "请输入金额"
+  },
+  {
+    "id": "funds.entryDepositTime",
+    "defaultMessage": "请输入存款时间"
+  },
+  {
+    "id": "funds.selectChannel",
+    "defaultMessage": "请选择存款方式"
+  },
+  {
+    "id": "user.bankNo",
+    "defaultMessage": "银行卡号"
+  },
+  {
+    "id": "user.entryBankNo",
+    "defaultMessage": "请输入银行卡号"
+  },
+  {
+    "id": "user.bankLength",
+    "defaultMessage": "请输入正确的银行卡号"
+  },
+  {
+    "id": "deposit.entryMinMax",
+    "defaultMessage": "Min/Max Limit：{min}/{max}"
+  },
+  {
+    "id": "deposit.uploadImg",
+    "defaultMessage": "上传信息"
+  },
+  {
+    "id": "funds.transferAmount",
+    "defaultMessage": "充值金额"
+  },
+  {
+    "id": "funds.transferTime",
+    "defaultMessage": "充值时间"
+  },
+  {
+    "id": "funds.transferChannel",
+    "defaultMessage": "充值渠道"
+  },
+  {
+    "id": "funds.bankDetail",
+    "defaultMessage": "银行信息"
+  },
+  {
+    "id": "user.name",
+    "defaultMessage": "姓名"
+  },
+  {
+    "id": "home.deposits",
+    "defaultMessage": "Deposits"
+  }
+]

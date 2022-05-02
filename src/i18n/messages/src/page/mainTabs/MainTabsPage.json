@@ -1,0 +1,26 @@
+[
+  {
+    "id": "home.home",
+    "defaultMessage": "首页"
+  },
+  {
+    "id": "home.founds",
+    "defaultMessage": "资金"
+  },
+  {
+    "id": "home.promotion",
+    "defaultMessage": "优惠"
+  },
+  {
+    "id": "home.myAccount",
+    "defaultMessage": "账号中心"
+  },
+  {
+    "id": "home.liveChat",
+    "defaultMessage": "LiveChat"
+  },
+  {
+    "id": "home.down",
+    "defaultMessage": "下载"
+  }
+]

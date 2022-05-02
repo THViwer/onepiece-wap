@@ -1,0 +1,38 @@
+[
+  {
+    "id": "user.phone",
+    "defaultMessage": "手机号"
+  },
+  {
+    "id": "user.entryPhone",
+    "defaultMessage": "请输入手机号"
+  },
+  {
+    "id": "user.name",
+    "defaultMessage": "姓名"
+  },
+  {
+    "id": "user.entryName",
+    "defaultMessage": "请输入姓名"
+  },
+  {
+    "id": "user.phoneGuidError",
+    "defaultMessage": "手机号错误(10-13位数字)"
+  },
+  {
+    "id": "register.errorHasPhone",
+    "defaultMessage": "手机号已存在！"
+  },
+  {
+    "id": "common.step2",
+    "defaultMessage": "第二步"
+  },
+  {
+    "id": "user.country",
+    "defaultMessage": "Country"
+  },
+  {
+    "id": "user.registerInfo",
+    "defaultMessage": "注册信息"
+  }
+]

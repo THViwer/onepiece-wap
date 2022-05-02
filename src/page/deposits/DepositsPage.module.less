@@ -1,0 +1,236 @@
+@import "~jxTheme/base";
+
+.formContainerTop {
+  padding: 0 5%;
+  //background:rgba(239,239,239,0.69);
+}
+
+.formContainer {
+  padding: 0 5% 3rem 5%;
+  //background:rgba(239,239,239,0.69);
+}
+
+.bankContainer {
+  padding: 1.42rem 5%;
+  background: rgba(239, 239, 239, 0.68);
+  font-size: 1.17rem;
+  color: rgba(119, 119, 119, 1);
+  @102-bank-list-panel-background();
+  @103-bank-name-color();
+}
+
+.bankItemContainer {
+  overflow: hidden;
+  width: 100%;
+}
+
+.bankLogo {
+  width: 4rem;
+  height: 4rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 1rem;
+}
+
+.bankInputContainer {
+  margin-top: 0.8rem;
+}
+
+.bankInput {
+  padding-left: 1.5rem;
+  color: rgba(51, 51, 51, 1);
+  flex: 1 1;
+  height: 2.83rem;
+  line-height: 2.83rem;
+  background: rgba(230, 243, 255, 1);
+  box-shadow: 0rem 0.17rem 0.67rem 0rem rgba(50, 51, 94, 0.18);
+  border: 0.08rem solid #0d76d0;
+  border-radius: 0.42rem;
+  @47-input-style();
+  @48-input-text-color();
+}
+
+.copy {
+  margin-left: 1rem;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: rgba(51, 51, 51, 1);
+  margin: 1.3rem 0 0.75rem 0;
+  @100-input-babel-color();
+  span {
+    color: #dd041f;
+    padding-left: 0.33rem;
+  }
+}
+
+.userBankContainer {
+}
+
+.userBankContainer > div {
+  flex: 1 1;
+}
+
+.iconOpen {
+  margin-left: 1rem;
+  .addImageContain("jian");
+  width: 1.17rem;
+  height: 1.08rem;
+  flex: unset !important;
+  .addImageMaskNoColor("jian", @app-img-base);
+  @78-join-icon-color();
+}
+
+.iconClose {
+  margin-left: 1rem;
+  .addImageContain("jia");
+  width: 1.17rem;
+  height: 1.08rem;
+  flex: unset !important;
+  .addImageMaskNoColor("jia", @app-img-base);
+  @78-join-icon-color();
+}
+
+.input {
+  height: 3.17rem !important;
+  min-height: 3.17rem;
+  background: rgba(225, 225, 225, 1);
+  border-radius: 0.42rem;
+  border: 0.08rem solid rgba(211, 208, 208, 1);
+  color: #4a4a4a;
+  @47-input-style();
+  :global {
+    .am-list-line {
+      justify-content: space-between;
+    }
+    .am-list-line .am-list-extra {
+      text-align: left !important;
+      flex-basis: unset !important;
+    }
+  }
+}
+
+.numInput {
+  line-height: 3.17rem;
+  padding-left: 15px;
+}
+
+.systemButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2.5rem auto 0 auto;
+  height: 2.83rem;
+  background: rgba(13, 118, 208, 1);
+  border-radius: 5px;
+  width: 24.67rem;
+  color: rgba(255, 255, 255, 1);
+  @53-button-background();
+  @54-button-text-color();
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.33rem 0.9rem 1.33rem;
+}
+
+.moneyItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.17rem;
+  height: 3.25rem;
+  color: #999999;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(221, 221, 221, 1);
+  box-shadow: 0 0.17rem 0.67rem 0 rgba(50, 51, 94, 0.18);
+  border-radius: 5px;
+}
+
+.moneyItemActive {
+  color: rgba(13, 118, 208, 1);
+  border: 1px solid rgba(13, 118, 208, 1);
+}
+
+.imgFile {
+  margin-left: 2rem;
+  height: 6rem;
+}
+
+.fileUploadButton {
+  margin: 2rem 0 1.83rem 0;
+  display: flex;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 8.67rem;
+  height: 2.17rem;
+  background: rgba(221, 4, 31, 1);
+  border-radius: 0.33rem;
+}
+
+.bankSelect {
+  .addImageMaskNoColor("icon_bank_select", @app-img-base);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.67rem;
+  @46-select-bank-icon-color();
+}
+
+.bankNoSelect {
+  .addImageContain("icon_bank_no_select");
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.67rem;
+}
+
+.bankNoSelectInfo {
+  flex: 1 1;
+}
+
+.online {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.42rem;
+  height: 1.17rem;
+  background: rgba(85, 217, 72, 1);
+  border-radius: 0.17rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 1);
+}
+
+.container5 {
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.depositList {
+  display: flex;
+  width: 100%;
+  border-bottom: 1px solid #c6c6c6;
+  justify-content: center;
+}
+
+.depositSelect {
+  font-size: 1.08rem;
+  width: 6.17rem;
+  height: 2.83rem;
+  background: rgba(231, 231, 231, 1);
+  border-radius: 0.42rem 0.42rem 0rem 0rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  text-align: center;
+  color: #666666;
+}
+
+.depositSelectActive {
+  background: rgba(1, 71, 141, 1);
+  color: #ffffff;
+  @42-tabs-tab-active-background();
+  @43-tabs-tab-text();
+}

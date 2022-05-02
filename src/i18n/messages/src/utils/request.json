@@ -1,0 +1,10 @@
+[
+  {
+    "id": "common.errorServer",
+    "defaultMessage": "服务器异常"
+  },
+  {
+    "id": "common.loading",
+    "defaultMessage": "加载中"
+  }
+]

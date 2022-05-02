@@ -1,0 +1,96 @@
+@import "~jxTheme/base";
+
+@marHeight:1.65rem;
+@marCHeight:2.65rem;
+.title {
+  position: relative;
+  .addImageMaskNoColor("volume", @app-img-base);
+  margin-right: 0.5rem;
+  width: @marHeight;
+  height: @marHeight;
+  @94-marquee-icon-color();
+}
+
+.dot{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width:0.67rem;
+  height:0.67rem;
+  background:rgba(227,2,2,1);
+  border-radius: 50%;
+}
+
+@keyframes scrollChild {
+  0% {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  height: @marCHeight;
+  //border-radius: 5px;
+  color: rgba(20, 0, 0, 1);
+  font-size: @font-size-2;
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0.21rem auto 0 auto;
+  @2-marquee-text-color();
+}
+
+.marqueeBg {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 2.17rem;
+  background: linear-gradient(
+    180deg,
+    rgba(13, 118, 208, 1) 0%,
+    rgba(30, 174, 234, 0) 100%
+  );
+  opacity: 0.15;
+  @00home-line();
+}
+
+.marqueeContent{
+  position: absolute;
+  bottom: 0;
+  width: 90%;
+  padding: 0 0.5rem;
+  margin: 0 5%;
+  height: @marHeight;
+}
+
+.contentBody {
+  height: 100%;
+  flex: 1 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.contentText {
+  overflow: hidden;
+  position: absolute;
+  font-size:1rem;
+}
+
+.scrollContainer {
+  -webkit-backface-visibility: hidden;
+  will-change: auto;
+  height: @marHeight;
+  line-height: @marHeight;
+  animation: scrollChild 2s linear infinite;
+  overflow: hidden;
+  width: 100%;
+  :global {
+    span {
+      margin-right: jxRem(1);
+    }
+  }
+}

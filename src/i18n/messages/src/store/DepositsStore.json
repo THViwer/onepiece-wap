@@ -1,0 +1,14 @@
+[
+  {
+    "id": "common.loading",
+    "defaultMessage": "加载中"
+  },
+  {
+    "id": "withdraw.errorHasBank",
+    "defaultMessage": "银行卡已存在！"
+  },
+  {
+    "id": "deposit.success",
+    "defaultMessage": "申请存款提交成功"
+  }
+]

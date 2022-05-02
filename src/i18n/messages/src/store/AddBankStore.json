@@ -1,0 +1,10 @@
+[
+  {
+    "id": "withdraw.errorHasBank",
+    "defaultMessage": "银行卡已存在！"
+  },
+  {
+    "id": "withdraw.addSuccess",
+    "defaultMessage": "添加成功"
+  }
+]

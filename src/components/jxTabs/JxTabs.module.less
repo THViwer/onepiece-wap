@@ -1,0 +1,26 @@
+@import "../../theme/base";
+
+.tabs {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  color: @app-tabs-font-color;
+}
+
+.tabItem {
+  flex: 1 1;
+  height: 4.2rem;
+  line-height: 4rem;
+  text-align: center;
+  background: @app-content-background-color;
+  border-bottom: 2px solid @app-tabs-border-color;
+  font-size: @font-size-5;
+  font-weight: 500;
+  transition: 0.1s all linear;
+}
+
+.active {
+  color: @app-tabs-active-font-color;
+  border-bottom-color: @app-tabs-active-border-color;
+}

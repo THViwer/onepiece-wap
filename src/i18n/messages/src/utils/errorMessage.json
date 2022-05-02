@@ -1,0 +1,114 @@
+[
+  {
+    "id": "common.error4001",
+    "defaultMessage": "用户名或密码错误"
+  },
+  {
+    "id": "common.error4002",
+    "defaultMessage": "密码错误"
+  },
+  {
+    "id": "common.error4003",
+    "defaultMessage": "用户名已存在"
+  },
+  {
+    "id": "common.error4004",
+    "defaultMessage": "用户被停用"
+  },
+  {
+    "id": "common.error4005",
+    "defaultMessage": "安全码错误"
+  },
+  {
+    "id": "common.error4006",
+    "defaultMessage": "平台会员注册失败"
+  },
+  {
+    "id": "common.error4007",
+    "defaultMessage": "默认层级不可修改"
+  },
+  {
+    "id": "common.error4008",
+    "defaultMessage": "移动人数为0"
+  },
+  {
+    "id": "common.error4009",
+    "defaultMessage": "移动人数为0"
+  },
+  {
+    "id": "common.error4010",
+    "defaultMessage": "平台返回数据错误"
+  },
+  {
+    "id": "common.error5001",
+    "defaultMessage": "订单操作过期"
+  },
+  {
+    "id": "common.error5002",
+    "defaultMessage": "不可转出,打码量不足"
+  },
+  {
+    "id": "common.error5003",
+    "defaultMessage": "余额不足"
+  },
+  {
+    "id": "common.error5004",
+    "defaultMessage": "取款密码错误"
+  },
+  {
+    "id": "common.error5005",
+    "defaultMessage": "余额不足"
+  },
+  {
+    "id": "common.error5006",
+    "defaultMessage": "不满足优惠活动转入"
+  },
+  {
+    "id": "common.error5007",
+    "defaultMessage": "不满足优惠活动转出"
+  },
+  {
+    "id": "common.error5008",
+    "defaultMessage": "不可参加活动"
+  },
+  {
+    "id": "common.error5009",
+    "defaultMessage": "优惠活动过期"
+  },
+  {
+    "id": "common.error5010",
+    "defaultMessage": "厅主保证金不足"
+  },
+  {
+    "id": "common.error5011",
+    "defaultMessage": "转账失败，请稍后再试"
+  },
+  {
+    "id": "common.error5012",
+    "defaultMessage": "银行卡错误，不为数字或长度不够"
+  },
+  {
+    "id": "common.error5013",
+    "defaultMessage": "转账过快"
+  },
+  {
+    "id": "common.error6001",
+    "defaultMessage": "平台方式错误"
+  },
+  {
+    "id": "common.error6002",
+    "defaultMessage": "转账订单已存在"
+  },
+  {
+    "id": "common.error6003",
+    "defaultMessage": "平台维护"
+  },
+  {
+    "id": "common.error6004",
+    "defaultMessage": "平台调用接口错误"
+  },
+  {
+    "id": "common.error6005",
+    "defaultMessage": "游戏平台维护"
+  }
+]

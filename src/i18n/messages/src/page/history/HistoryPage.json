@@ -1,0 +1,22 @@
+[
+  {
+    "id": "history.deposit",
+    "defaultMessage": "充值"
+  },
+  {
+    "id": "history.withdraw",
+    "defaultMessage": "提款"
+  },
+  {
+    "id": "history.promotion",
+    "defaultMessage": "活动"
+  },
+  {
+    "id": "history.details",
+    "defaultMessage": "明细"
+  },
+  {
+    "id": "funds.history",
+    "defaultMessage": "历史"
+  }
+]

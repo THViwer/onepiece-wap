@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>m3pay</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+      $(function() {
+        var payInfo = JSON.parse(localStorage.getItem("thirdPay"));
+        $("#payForm").attr("action", payInfo.action);
+        var inputs = $("#payForm [name]");
+        $.each(inputs, function(i, input) {
+          var split = $(input).attr("name");
+          $(input).val(payInfo[split]);
+        });
+        $("#payForm").submit();
+      });
+    </script>
+  </head>
+  <body>
+    <form
+      id="payForm"
+      method="post"
+      name="ePayment"
+      action="https://payment.m3pay.com/ePayment/entry.aspx"
+    >
+      <input type="hidden" name="merchant" value="KennyU996" />
+      <input type="hidden" name="amount" value="10.00" />
+      <input type="hidden" name="refid" value="" />
+      <input type="hidden" name="token" value="" />
+      <input type="hidden" name="customer" value="1_1" />
+      <input type="hidden" name="currency" value="MYR" />
+      <input type="hidden" name="bankcode" value="10000628" />
+      <input type="hidden" name="clientip" value="94.237.64.70" />
+      <input
+        type="hidden"
+        name="post_url"
+        value="https://open.gpgaming88.com/api/v1/player/pay/surepay"
+      />
+      <input
+        type="hidden"
+        name="failed_return_url"
+        value="http://www.google.com"
+      />
+      <input type="hidden" name="return_url" value="http://www.google.com" />
+    </form>
+  </body>
+</html>

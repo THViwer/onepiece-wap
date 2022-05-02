@@ -1,0 +1,160 @@
+@import "~jxTheme/base";
+
+.accordion {
+  background: red;
+  :global {
+    .am-accordion-header {
+      background: rgba(212, 231, 247, 1) ;
+      height: 3.83rem !important;
+      line-height: 3.83rem !important;
+      @56-select-background();
+
+    }
+    .am-accordion-item{
+      border-bottom: 1px solid #ffffff;
+      @56-select-background();
+    }
+  }
+}
+
+.itemLeft {
+  font-size: 1.17rem;
+  margin-left: 1.5rem;
+  display: flex;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+  height: 3.83rem;
+  border-bottom: 0.08rem solid #dedede;
+  @112-game-list-background();
+  @113-game-list-line-color();
+}
+
+.item2 {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: space-between;
+  color: #000000 !important;
+}
+
+.text1 {
+  margin-left: 0.42rem;
+  font-size: 1.17rem;
+  padding-right: 2rem;
+  @68-action-title-color();
+}
+
+.text1_money {
+  @68-action-title-color();
+}
+
+.allInBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.8rem;
+  height: 2rem;
+  background: #00458B;
+  border-radius: 1rem;
+  color: #ffffff;
+  margin: 0 1rem 0 1.17rem;
+  @74-all-in-background();
+  @75-all-in-color();
+}
+
+.iconOpen {
+  .addImageContain("jian");
+  width: 1.17rem;
+  height: 1.08rem;
+  .addImageMaskNoColor("jian", @app-img-base);
+  @78-join-icon-color();
+}
+
+.iconClose {
+  .addImageContain("jia");
+  width: 1.17rem;
+  height: 1.08rem;
+  .addImageMaskNoColor("jia", @app-img-base);
+  @78-join-icon-color();
+}
+
+.form {
+  height: 0;
+  overflow: hidden;
+  transition: all 0.25s ease-in 0.25s;
+}
+
+@height:5.5rem;
+
+.table {
+  font-size: 1rem;
+  width: 100%;
+  height: @height;
+  background: rgba(239, 239, 239, 1);
+  @150-list-transfer-item-background();
+  td:first-child {
+    padding-left: 1.58rem;
+    width: 10.5rem;
+    margin-left: 1.58rem;
+    @114-babel-color();
+  }
+}
+
+.formActive {
+  display: block;
+  height: @height;
+}
+
+.weekBet{
+  text-align: center;
+}
+
+.input {
+  width: 10.25rem;
+  height: 2.17rem !important;
+  min-height: 2.17rem !important;
+  font-size: 1.2rem;
+  line-height: 2.17rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 5px;
+  border: 0.08rem solid rgba(204, 204, 204, 1);
+  color: #000;
+  padding-left: 15px;
+  :global {
+    input {
+      font-size: 1.2rem !important;
+    }
+  }
+}
+
+.submit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: #ffffff;
+  width: 7.42rem;
+  height: 2.17rem;
+  background: #0D76D0;
+  border-radius: 5px;
+  @76-all-submit-background();
+  @77-all-submit-text-color();
+}
+
+.disable{
+  background: rgba(212, 212, 212, 1) !important;
+}
+
+.icoTranter{
+  .addImageContain("icon_tranter");
+  width:1.42rem;
+  height:1.42rem;
+  margin-right: 1.92rem;
+  .addImageMaskNoColor("icon_tranter", @app-img-base);
+  @79-transfer-icon-color();
+}

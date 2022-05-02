@@ -1,0 +1,109 @@
+@import "~jxTheme/base";
+
+.container {
+  width: 100%;
+  background:rgba(244,244,244,1);
+}
+
+.container2 {
+  color: #ffffff;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: 7.58rem;
+  .addImageCover("us_top_bg", @theme-img-path);
+  overflow: hidden;
+}
+
+.userName {
+  line-height: 3rem;
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0 8.67rem;
+  @21-user-name-color();
+}
+
+.container1 {
+  flex-flow: wrap;
+  color: #ffffff;
+  margin: 3rem auto 0 auto;
+  width: 87.2%;
+}
+
+.line3 {
+  width: 100%;
+  height:2.83rem;
+  background:rgba(59,59,59,1);
+  font-size:1.08rem;
+  color:rgba(255,255,255,1);
+  padding: 0 2rem;
+  @24-tip-container-background();
+  @26-main-wallet-color();
+  :global{
+    .am-switch .checkbox{
+      width: 36px;
+      height: 18px !important;
+      &:before{
+        width: 33px;
+        height: 16px !important;
+      }
+      &:after{
+        height: 16px !important;
+        width: 16px !important;
+      }
+    }
+    .am-switch .checkbox:before{
+
+    }
+  }
+}
+
+.iconTransfer{
+  .addImageMask("auto_transfer", @app-img-base, #fff, "png");
+  width:1.3rem;
+  height:1.16rem;
+  margin-right: 8px;
+  @25-tip-icon-color();
+}
+
+.menuItem {
+  overflow: hidden;
+  width: 47%;
+  height: 10.67rem;
+  background:rgba(230,230,230,1);
+  border-radius: 8px;
+  margin-bottom: 1.67rem;
+  @27-user-module-background();
+  &:nth-child(2n + 1) {
+    margin-right: 6%;
+  }
+}
+
+.iconPassWord {
+  margin: 1.92rem auto 1rem auto;
+  width: 5.42rem;
+  height: 5.42rem;
+  .addImageMaskNoColor("CHANGE_PASSWORD");
+  @28-user-module-icon-color();
+}
+
+.iconBank {
+  margin: 1.92rem auto 1rem auto;
+  width: 5.42rem;
+  height: 5.42rem;
+  .addImageMaskNoColor("BSNKING_DETAILS");
+  @28-user-module-icon-color();
+}
+
+.iconGame {
+  margin: 1.92rem auto 1rem auto;
+  width: 5.42rem;
+  height: 5.42rem;
+  .addImageMaskNoColor("CHANGE_GAME_PASSWORD");
+  @28-user-module-icon-color();
+}
+
+.text {
+  text-align: center;
+  font-size: 0.83rem;
+  color: rgba(104, 104, 104, 1);
+  @29-user-module-text-color();
+}

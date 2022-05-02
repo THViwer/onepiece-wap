@@ -1,0 +1,99 @@
+@import "../../../theme/base";
+
+.tipDialog {
+  :global {
+    .am-modal {
+      width: 24.58rem;
+      background: #ffffff;
+      border-radius: 10px;
+    }
+
+    .am-modal-content {
+      .addImageTopContain("promotionTopBg");
+    }
+
+    .am-modal-title {
+      font-size: 1.67rem !important;
+      color: #ffffff;
+    }
+  }
+}
+
+.itemContainer {
+  padding: 0.67rem 0.67rem 0.67rem 1.08rem;
+  margin-top: 1.5rem;
+  width: 21.25rem;
+  //height:6rem;
+  border-radius: 0.5rem;
+  border: 0.08rem solid rgba(238, 238, 238, 1);
+}
+
+.itemContainerActive {
+  border: 0.08rem solid rgba(13, 118, 208, 1);
+}
+
+.promotionIntroduction {
+  font-size: 1.08rem;
+  color: rgba(102, 102, 102, 1);
+  text-align: left;
+  flex: 1 1;
+}
+
+.bankSelect {
+  .addImageContain("icon_bank_select");
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.67rem;
+}
+
+.contentContainer{
+  max-height: 65vh;
+  overflow-y: auto;
+}
+
+.bankNoSelect {
+  .addImageContain("icon_bank_no_select");
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 0.67rem;
+}
+
+.title {
+  text-align: left;
+  font-size: 1.33rem;
+  color: rgba(13, 118, 208, 1);
+  line-height: 1.83rem;
+}
+
+.dialogTitle {
+  position: relative;
+  width: 100%;
+}
+
+.closeIcon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.button1 {
+  margin-top: 1.17rem;
+  width: 10rem;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  background: rgba(255, 255, 255, 1);
+  border-radius: 1.5rem;
+  border: 0.08rem solid rgba(202, 202, 202, 1);
+  font-size: 1.17rem;
+  color: rgba(155, 155, 155, 1);
+}
+
+.button2 {
+  margin-top: 1.17rem;
+  width: 10rem;
+  height: 3.25rem;
+  line-height: 3.25rem;
+  color: #ffffff;
+  background: rgba(253, 171, 9, 1);
+  border-radius: 1.63rem;
+}

@@ -1,0 +1,10 @@
+[
+  {
+    "id": "account.bankDetail",
+    "defaultMessage": "银行卡详情"
+  },
+  {
+    "id": "account.currentBankExistCard",
+    "defaultMessage": "当前银行已存在银行卡"
+  }
+]

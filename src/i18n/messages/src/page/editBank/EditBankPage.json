@@ -1,0 +1,38 @@
+[
+  {
+    "id": "funds.name",
+    "defaultMessage": "姓名"
+  },
+  {
+    "id": "funds.accountNo",
+    "defaultMessage": "卡号"
+  },
+  {
+    "id": "funds.entryBankNo",
+    "defaultMessage": "请输入卡号"
+  },
+  {
+    "id": "funds.bindBank",
+    "defaultMessage": "绑定银行卡"
+  },
+  {
+    "id": "common.save",
+    "defaultMessage": "保存"
+  },
+  {
+    "id": "user.bankLength",
+    "defaultMessage": "请输入正确的银行卡号"
+  },
+  {
+    "id": "funds.bank",
+    "defaultMessage": "银行"
+  },
+  {
+    "id": "user.name",
+    "defaultMessage": "姓名"
+  },
+  {
+    "id": "editBankPage.title",
+    "defaultMessage": "修改银行卡"
+  }
+]

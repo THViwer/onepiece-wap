@@ -1,0 +1,69 @@
+@import "~jxTheme/base";
+
+.container {
+  height: 100%;
+  :global {
+    .am-tabs-default-bar {
+      background: rgba(13, 118, 208, 1) !important;
+      color: #fff;
+      @30-tabs-background();
+      @33-tabs-item-text-color();
+    }
+    .active-tab {
+      color: #fff;
+      @32-tabs-item-active-text-color();
+      position: relative;
+      font-size: 1.08rem;
+    }
+    .start {
+      display: none;
+      position: absolute;
+      bottom: -1px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 7px 7px 7px;
+      border-color: transparent transparent #ffffff transparent;
+    }
+    .am-tabs-default-bar-tab-active {
+      .active-tab {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #FD9D00 !important;
+        @33-tabs-item-text-color();
+      }
+      .start {
+        display: block;
+      }
+    }
+
+    //.am-tabs-default-bar-top .am-tabs-default-bar-tab::after {
+    //  height: 0 !important;
+    //}
+    //.am-tabs-default-bar-prevpage {
+    //  background: transparent;
+    //}
+    //.am-tabs-default-bar-nextpage {
+    //  background: transparent;
+    //}
+  }
+}
+
+.autoContainer {
+  :global {
+    .am-tabs-default-bar-tab {
+      width: auto !important;
+      margin-right: jxRem(2.33);
+
+      &:first-child {
+        margin-left: jxRem(1.3);
+      }
+
+      &:last-child {
+        margin-left: 0;
+      }
+    }
+  }
+}

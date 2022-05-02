@@ -1,0 +1,55 @@
+@import "../../theme/base";
+
+.optionContainer {
+  align-items: center;
+  background: #ffffff;
+  border-top: 0.5px solid #dddddd;
+  border-bottom: 0.5px solid #dddddd;
+}
+
+.optionBtn {
+  display: flex;
+  width: jxRem(1.8);
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  height: 1.67rem;
+  color: #979797;
+  border-right: 0.5px solid #dddddd;
+  border-left: 0.5px solid #dddddd;
+}
+
+.icAdd {
+  width: jxRem(1.6);
+  height: jxRem(1.6);
+  .addImageContain("ic-add", @img-betting-path);
+}
+
+.icSubtract {
+  width: jxRem(1.6);
+  height: jxRem(1.6);
+  .addImageContain("ic-subtract", @img-betting-path);
+}
+
+.inputNum {
+  width: 4rem;
+  &:global(.am-input-item) {
+    padding-left: 0.2rem;
+    height: 1.67rem;
+    min-height: 1.67rem;
+  }
+  :global {
+    .am-list-line::after {
+      height: 0 !important;
+    }
+    .am-list-line {
+      padding-right: 0.2rem;
+    }
+    .am-input-control input {
+      text-align: center;
+    }
+    input {
+      font-size: @font-size-6 !important;
+    }
+  }
+}

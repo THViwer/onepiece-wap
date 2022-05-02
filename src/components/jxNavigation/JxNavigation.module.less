@@ -1,0 +1,23 @@
+.navigationContainer {
+  :global {
+    .SlideInOut-enter {
+      transform: translateX(100%);
+    }
+    .SlideInOut-enter.SlideInOut-enter-active {
+      transform: translateX(0);
+    }
+    .SlideInOut-exit {
+      transform: translateX(0%);
+    }
+    .SlideInOut-exit.SlideInOut-exit-active {
+      transform: translateX(100%);
+    }
+  }
+}
+
+.navigationPage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transition: transform 400ms;
+}

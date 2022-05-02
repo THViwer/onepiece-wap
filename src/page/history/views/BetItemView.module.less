@@ -1,0 +1,85 @@
+@import "~jxTheme/base";
+
+.container {
+  overflow: hidden;
+}
+
+.itemContainer {
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  margin: 0.5rem auto;
+  width: 87.2%;
+  height: 4.17rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 8px 0 rgba(50, 51, 94, 0.18);
+  border-radius: 8px;
+  @126-list-item-background();
+}
+
+.item1 {
+  margin-left: 1.25rem;
+  width: 10.5rem;
+  @109-game-list-background();
+}
+
+.event {
+  font-size: 1.25rem;
+  color: rgba(51, 51, 51, 1);
+  line-height: 1.75rem;
+  @127-list-item-type-color();
+}
+
+.createdTime {
+  color: rgba(155, 155, 155, 1);
+  line-height: 1.42rem;
+}
+
+.item2 {
+  flex: 1 1;
+  color: rgba(155, 155, 155, 1);
+}
+
+.money {
+  margin-left: 0.42rem;
+  font-size: 1.67rem;
+  color: rgba(79, 78, 78, 1);
+  line-height: 1.67rem;
+  color: green;
+}
+
+.add {
+  color: red;
+  @128-list-money-text-color();
+}
+
+.item3 {
+  margin-right: 0.75rem;
+  width: 5.5rem;
+}
+
+.success {
+  width: 1.42rem;
+  height: 1.67rem;
+  .addImageContain("order_success");
+}
+
+.process {
+  width: 1.42rem;
+  height: 1.67rem;
+  .addImageContain("order_process");
+}
+
+.fail {
+  width: 1.42rem;
+  height: 1.67rem;
+  .addImageContain("order_fail");
+}
+
+.failText {
+  color: #DD041F;
+}
+
+.processText {
+  color: #fd9d00;
+}

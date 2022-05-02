@@ -1,0 +1,37 @@
+@import "~jxTheme/base";
+
+.accordion {
+  background: red;
+  :global {
+    .am-accordion-header {
+      background: rgba(212, 231, 247, 1) ;
+      height: 3.83rem !important;
+      line-height: 3.83rem !important;
+      @56-select-background();
+      @57-select-text-color();
+    }
+    .am-accordion-item {
+      border-bottom: 1px solid #ffffff;
+      @56-select-background();
+    }
+  }
+}
+
+.item2 {
+  width: 1.67rem;
+  height: 1.67rem;
+  .addImageMaskNoColor("icoChange", @app-img-base);
+  @58-edit-password-icon-color();
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.17rem;
+  height: 3.83rem;
+  padding: 0 1.67rem;
+  border-bottom: 0.08rem solid #dedede;
+  @109-game-list-background();
+  @110-game-text-color();
+}

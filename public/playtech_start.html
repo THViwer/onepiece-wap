@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>playtech</title>
+  <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+  <script>
+    $(function() {
+      var gameInfo = JSON.parse(localStorage.getItem("Playtech"));
+      console.log(gameInfo);
+      var loginPath = gameInfo["loginPath"];
+      var gamePath = gameInfo["gamePath"];
+      var username = gameInfo["username"];
+      var password = gameInfo["password"];
+      var language = gameInfo["language"];
+      $.ajax({
+        url: loginPath,
+        dataType: "script",
+        cache: true
+      }).done(function() {
+        iapiSetCallout("Login", calloutLogin);
+        iapiSetCallout("Logout", calloutLogout);
+        var token = login(1);
+        console.log("token", token);
+
+        function login(realMode) {
+          iapiSetClientPlatform("mobile&deliveryPlatform=HTML5");
+          iapiLogin(username, password, realMode, language);
+        }
+        function logout(allSessions, realMode) {
+          iapiLogout(allSessions, realMode);
+        }
+        function calloutLogin(response) {
+          if (response.errorCode) {
+            alert("Login failed, " + response.errorText);
+          } else {
+            window.location = gamePath;
+            // window.location = "https://wap.gpgaming88.com"
+          }
+        }
+        function calloutLogout(response) {
+          if (response.errorCode) {
+            alert("Logout failed, " + response.errorCode);
+          } else {
+            alert("Logout OK");
+          }
+        }
+        // });
+      });
+    });
+  </script>
+</head>
+<body></body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "clientDir/*": ["./src/client/*"],
+      "jxTheme/*": ["./src/theme/*"],
+      "jxUtils/*": ["./src/utils/*"]
+    }
+  },
+
+  "exclude": ["node_modules", "build"]
+}

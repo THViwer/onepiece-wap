@@ -1,0 +1,18 @@
+[
+  {
+    "id": "home.sport",
+    "defaultMessage": "体育"
+  },
+  {
+    "id": "home.live",
+    "defaultMessage": "真人视频"
+  },
+  {
+    "id": "home.slot",
+    "defaultMessage": "老虎机"
+  },
+  {
+    "id": "home.fishing",
+    "defaultMessage": "捕鱼"
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "history.transferOut",
+    "defaultMessage": "转出"
+  },
+  {
+    "id": "history.deposit",
+    "defaultMessage": "充值"
+  },
+  {
+    "id": "history.withdraw",
+    "defaultMessage": "提款"
+  },
+  {
+    "id": "history.transferIn",
+    "defaultMessage": "转入"
+  },
+  {
+    "id": "history.freeze",
+    "defaultMessage": "冻结"
+  },
+  {
+    "id": "history.promotionMoney",
+    "defaultMessage": "优惠"
+  },
+  {
+    "id": "history.success",
+    "defaultMessage": "成功"
+  },
+  {
+    "id": "history.process",
+    "defaultMessage": "处理中"
+  },
+  {
+    "id": "history.fail",
+    "defaultMessage": "失败"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "home.home",
+    "defaultMessage": "首页"
+  },
+  {
+    "id": "home.promotion",
+    "defaultMessage": "优惠活动"
+  },
+  {
+    "id": "home.contact",
+    "defaultMessage": "联系我们"
+  },
+  {
+    "id": "home.language",
+    "defaultMessage": "语言"
+  },
+  {
+    "id": "home.desktop",
+    "defaultMessage": "pc版"
+  },
+  {
+    "id": "home.download",
+    "defaultMessage": "下载"
+  },
+  {
+    "id": "home.about",
+    "defaultMessage": "关于我们"
+  },
+  {
+    "id": "home.logout",
+    "defaultMessage": "退出"
+  }
+]

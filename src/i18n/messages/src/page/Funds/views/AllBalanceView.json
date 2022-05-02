@@ -1,0 +1,42 @@
+[
+  {
+    "id": "funds.transferSuccessful",
+    "defaultMessage": "转账成功"
+  },
+  {
+    "id": "funds.balanceTip",
+    "defaultMessage": "请输入金额"
+  },
+  {
+    "id": "funds.allTransferIn",
+    "defaultMessage": "全部转入"
+  },
+  {
+    "id": "transfer.weekBet",
+    "defaultMessage": "WeekBet"
+  },
+  {
+    "id": "funds.depositAmount",
+    "defaultMessage": "充值金额"
+  },
+  {
+    "id": "funds.submit",
+    "defaultMessage": "提交"
+  },
+  {
+    "id": "funds.slots",
+    "defaultMessage": "老虎机 / 转账"
+  },
+  {
+    "id": "funds.livecasino",
+    "defaultMessage": "真人视频 / 转账"
+  },
+  {
+    "id": "funds.sport",
+    "defaultMessage": "体育 / 转账"
+  },
+  {
+    "id": "funds.fishing",
+    "defaultMessage": "捕鱼 / 转账"
+  }
+]

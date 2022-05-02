@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>m3pay</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script>
+      $(function() {
+        var payInfo = JSON.parse(localStorage.getItem("thirdPay"));
+        var inputs = $("#payForm [name]");
+        $.each(inputs, function(i, input) {
+          var split = $(input).attr("name");
+          $(input).val(payInfo[split]);
+        });
+        $("#payForm").submit();
+      });
+    </script>
+  </head>
+  <body>
+    <form
+      id="payForm"
+      method="post"
+      name="ePayment"
+      action="https://payment.m3pay.com/ePayment/entry.aspx"
+    >
+      <input type="hidden" name="MerchantCode" value="T004" /><br />
+      <input type="hidden" name="RefNo" value="" /> <br />
+      <input type="hidden" name="Amount" value="10.00" /> <br />
+      <input type="hidden" name="UserName" value="cabb" /> <br />
+      <input type="hidden" name="UserEmail" value="cabb@gmail.com" /> <br />
+      <input type="hidden" name="UserContact" value="6012431564" /> <br />
+      <input type="hidden" name="Remark" value="Top Up Credit (RM1)" />
+      <input type="hidden" name="Signature" value="" /> <br />
+      <input type="hidden" name="ResponseURL" value="" />
+      <input type="hidden" name="BackendURL" value="" />
+    </form>
+  </body>
+</html>

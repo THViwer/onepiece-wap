@@ -1,0 +1,54 @@
+@import "../../theme/base";
+
+.container {
+  flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+}
+
+.gameItem {
+  box-shadow: 0 2px 8px 0 rgba(50, 51, 94, 0.18);
+  border-radius: 8px;
+  width: 48%;
+  margin-bottom: 1.25rem;
+  @88-game-background();
+  &:nth-child(2n + 1) {
+    margin-right: 4%;
+  }
+}
+
+.imgBg {
+  width: 13.08rem;
+  height: 9rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 8px 8px 0 0;
+}
+
+.gameText {
+  margin: 0.42rem 0.67rem 0.42rem 1rem;
+  font-size: 1.17rem;
+  color: rgba(51, 51, 51, 1);
+  @89-game-name-color();
+}
+
+.ico {
+  width: 2.13rem;
+  height: 2.13rem;
+}
+
+.android {
+  .addImageContain("android");
+}
+
+.ios {
+  .addImageContain("ios");
+}
+
+.icoMenu {
+  .addImageContain("icon_menu", @app-img-base);
+  width: 2.92rem;
+  height: 2.92rem;
+  @1-menu-icon();
+}

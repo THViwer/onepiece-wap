@@ -1,0 +1,22 @@
+[
+  {
+    "id": "user.changePassword",
+    "defaultMessage": "修改密码"
+  },
+  {
+    "id": "user.banks",
+    "defaultMessage": "银行列表"
+  },
+  {
+    "id": "user.changePlatformPassword",
+    "defaultMessage": "修改游戏密码"
+  },
+  {
+    "id": "user.centerAccount",
+    "defaultMessage": "账号中心"
+  },
+  {
+    "id": "common.autoTransfer",
+    "defaultMessage": "Main Wallet Auto Transfer"
+  }
+]

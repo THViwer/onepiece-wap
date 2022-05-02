@@ -1,0 +1,10 @@
+[
+  {
+    "id": "user.join",
+    "defaultMessage": "JOIN"
+  },
+  {
+    "id": "user.login",
+    "defaultMessage": "LOGIN"
+  }
+]

@@ -1,0 +1,66 @@
+@import "../../theme/base";
+
+.selectContent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: @font-size-6;
+  padding: 0 0.5rem;
+  width: 8rem;
+}
+
+.selectContainer {
+  background: @app-content-background-color;
+  width: 12rem;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.selectItem {
+  padding: 0.7rem 0;
+  font-size: @font-size-6;
+  border-top: 1px solid #dddddd;
+  &:first-child {
+    border-top: 0;
+    padding-top: 0;
+  }
+  &:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.iconStart {
+  width: 0;
+  height: 0;
+  color: #ffffff;
+  top: 50%;
+  border-top: 5px solid;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  pointer-events: none;
+  margin: 0 0.5rem;
+}
+
+.selectItemActive {
+  :global {
+    .radioInner {
+      margin-right: 1rem;
+      width: 15px;
+      height: 15px;
+      float: right;
+      transform: rotate(0deg);
+      &:after {
+        top: -2.5px;
+        right: 5px;
+        z-index: 999;
+        width: 7px;
+        height: 14px;
+        border-style: solid;
+        border-width: 0 1.5px 1.5px 0;
+        display: block;
+        border-color: #108ee9;
+        content: " ";
+        transform: rotate(45deg);
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+[
+  {
+    "id": "launch.easyStep",
+    "defaultMessage": "轻松逐步在您的手机上玩{name}"
+  },
+  {
+    "id": "launch.transferStep",
+    "defaultMessage": "转账到{name},并使用用户名和密码开始游戏"
+  },
+  {
+    "id": "launch.downloadStep",
+    "defaultMessage": "从链接下载{name}"
+  },
+  {
+    "id": "user.username",
+    "defaultMessage": "用户名"
+  },
+  {
+    "id": "user.password",
+    "defaultMessage": "密码"
+  },
+  {
+    "id": "launch.step1",
+    "defaultMessage": "第一步"
+  },
+  {
+    "id": "launch.step2",
+    "defaultMessage": "第二步"
+  },
+  {
+    "id": "launch.step3",
+    "defaultMessage": "第三步"
+  },
+  {
+    "id": "launch.detail",
+    "defaultMessage": "在您的手机中启动应用程序，并使用ID和密码登录"
+  },
+  {
+    "id": "PlatformInfoPage.down",
+    "defaultMessage": "下载"
+  },
+  {
+    "id": "PlatformInfoPage.play",
+    "defaultMessage": "开始"
+  }
+]

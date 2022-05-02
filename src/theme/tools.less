@@ -1,0 +1,131 @@
+@import "imgPath";
+
+//添加图片居中显示
+.addImageCover(@imageName,@imagePath:@app-img-base,@type: "png") {
+  background: url("@{imagePath}@{imageName}.@{type}") center no-repeat;
+  background-size: cover;
+}
+
+//添加图片居中显示
+.addImageContain(@imageName,@imagePath:@app-img-base,@type: "png") {
+  background: url("@{imagePath}@{imageName}.@{type}") center no-repeat;
+  background-size: contain;
+}
+
+//添加图片居中显示
+.addImageTopContain(@imageName,@imagePath:@app-img-base,@type: "png") {
+  background: url("@{imagePath}@{imageName}.@{type}") top no-repeat;
+  background-size: contain;
+}
+
+//添加图片居中显示
+.addImageBottomContain(@imageName,@imagePath,@type: "png") {
+  background: url("@{imagePath}@{imageName}.@{type}") bottom no-repeat;
+  background-size: contain;
+}
+
+.addImageNoSize(@imageName,@imagePath:@app-img-base,@type: "png") {
+  background-image: url("@{imagePath}@{imageName}.@{type}");
+}
+
+.addImageNoSizeTwoImg(@imageName1,@imagePath1,@imageName2,@imagePath2,@type: "png") {
+  background-image: url("@{imagePath1}@{imageName1}.@{type}"),
+    url("@{imagePath2}@{imageName2}.@{type}");
+}
+
+.addBorderImage(@imageName,@imagePath,@type: "png") {
+  border-image-source: url("@{imagePath}@{imageName}.@{type}");
+}
+
+.addImageMaskNoColor(@imageName,@imagePath:@app-img-base,@type: "png") {
+  mask: data-uri("@{imagePath}@{imageName}.@{type}") no-repeat 50% 50%;
+  mask-size: contain;
+}
+
+.addImageMask(@imageName,@imagePath:@app-img-base,@color:#fff,@type: "svg") {
+  mask: data-uri("@{imagePath}@{imageName}.@{type}") no-repeat 50% 50%;
+  mask-size: contain;
+  background: @color;
+}
+
+.app-button-base(@color) {
+  display: block;
+  outline: 0 none;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  padding: 0;
+  text-align: center;
+  font-size: 18px;
+  height: jxRem(3.67);
+  line-height: jxRem(3.67);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+  white-space: nowrap;
+  color: @color;
+  border-radius: 8px;
+  opacity: 1;
+  transition: opacity 300ms;
+  width: 100%;
+  border: 0;
+}
+
+.add-btn-activated() {
+  &.activated {
+    opacity: 0.7;
+  }
+}
+
+.text-ellipsis() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.wrapping-Lines() {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: normal;
+}
+
+//垂直单独模块滚动优化
+.scrollY() {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+  will-change: scroll-position;
+  contain: size style layout;
+}
+
+.addArrow() {
+  width: 15px;
+  height: 15px;
+  margin-left: 8px;
+  margin-right: 8px;
+  color: @app-sub-font-color;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg%20width%3D"16"%20height%3D"26"%20viewBox%3D"0%200%2016%2026"%20version%3D"1.1"%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20xmlns%3Axlink%3D"http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink"><g%20id%3D"UI-KIT_%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6"%20stroke%3D"none"%20stroke-width%3D"1"%20fill%3D"none"%20fill-rule%3D"evenodd"><g%20id%3D"9.9%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6"%20transform%3D"translate(-5809.000000%2C%20-8482.000000)"%20fill%3D"%23C7C7CC"><polygon%20id%3D"Disclosure-Indicator"%20points%3D"5811%208482%205809%208484%205820.5%208495%205809%208506%205811%208508%205825%208495"><%2Fpolygon><%2Fg><%2Fg><%2Fsvg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.addArrowDetail() {
+  width: 15px;
+  height: 15px;
+  margin-right: 8px;
+  color: @app-sub-font-color;
+  background-image: url('data:image/svg+xml;charset=utf-8,<svg%20width%3D"16"%20height%3D"26"%20viewBox%3D"0%200%2016%2026"%20version%3D"1.1"%20xmlns%3D"http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg"%20xmlns%3Axlink%3D"http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink"><g%20id%3D"UI-KIT_%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6"%20stroke%3D"none"%20stroke-width%3D"1"%20fill%3D"none"%20fill-rule%3D"evenodd"><g%20id%3D"9.9%E5%9F%BA%E7%A1%80%E5%85%83%E4%BB%B6"%20transform%3D"translate(-5809.000000%2C%20-8482.000000)"%20fill%3D"%23C7C7CC"><polygon%20id%3D"Disclosure-Indicator"%20points%3D"5811%208482%205809%208484%205820.5%208495%205809%208506%205811%208508%205825%208495"><%2Fpolygon><%2Fg><%2Fg><%2Fsvg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.flexItemXYCenter() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addBorder(@borderColor) {
+  border: 1px solid @borderColor;
+}

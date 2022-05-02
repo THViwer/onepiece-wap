@@ -1,0 +1,40 @@
+@import "../../theme/base";
+
+.container {
+  flex-direction: column;
+}
+
+.inputContainer {
+  height: 3.77rem;
+  width: 100%;
+  display: flex;
+}
+.dateContainer {
+  font-size: @font-size-7;
+  line-height: 3.97rem;
+  text-align: center;
+}
+
+.autoWith {
+  margin-right: jxRem(1.6);
+  &:first-child {
+    margin-left: jxRem(1.33);
+  }
+  &:last-child {
+    margin-left: 0;
+  }
+}
+
+.dateText {
+  white-space: nowrap;
+  height: 100%;
+  color: #f5f5f5;
+}
+
+.dateTextActive {
+  white-space: nowrap;
+  height: 100%;
+  padding-bottom: 3px;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
+}

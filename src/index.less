@@ -1,0 +1,40 @@
+@import "theme/base";
+
+* {
+  font-family:PingFangSC-Regular,PingFang SC;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+}
+
+html,
+body,
+#root,
+.ReactNavigationControllerView,
+.ReactNavigationController {
+  width: 100%;
+  height: 100%;
+  color: #6d6d6d;
+}
+
+body {
+  margin: 0;
+  position: fixed;
+  max-height: 100%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-user-drag: none;
+  -ms-content-zooming: none;
+  touch-action: manipulation;
+  word-wrap: break-word;
+  text-size-adjust: none;
+  user-select: none;
+  overflow: hidden; //移动端禁止浏览器下拉刷新
+  transition: transform 0.2s;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

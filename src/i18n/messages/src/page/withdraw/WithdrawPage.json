@@ -1,0 +1,62 @@
+[
+  {
+    "id": "common.save",
+    "defaultMessage": "保存"
+  },
+  {
+    "id": "common.name",
+    "defaultMessage": "姓名"
+  },
+  {
+    "id": "funds.amountThanZero",
+    "defaultMessage": "请输入大于0金额"
+  },
+  {
+    "id": "funds.entryAmount",
+    "defaultMessage": "请输入金额"
+  },
+  {
+    "id": "funds.entryDepositTime",
+    "defaultMessage": "请输入存款时间"
+  },
+  {
+    "id": "funds.selectChannel",
+    "defaultMessage": "请选择存款方式"
+  },
+  {
+    "id": "user.bankNo",
+    "defaultMessage": "银行卡号"
+  },
+  {
+    "id": "user.entryBankNo",
+    "defaultMessage": "请输入银行卡号"
+  },
+  {
+    "id": "user.bankLength",
+    "defaultMessage": "请输入正确的银行卡号"
+  },
+  {
+    "id": "funds.bank",
+    "defaultMessage": "银行"
+  },
+  {
+    "id": "funds.bankNo",
+    "defaultMessage": "银行卡号"
+  },
+  {
+    "id": "user.name",
+    "defaultMessage": "用户名"
+  },
+  {
+    "id": "funds.amount",
+    "defaultMessage": "金额"
+  },
+  {
+    "id": "funds.withdraw",
+    "defaultMessage": "取款"
+  },
+  {
+    "id": "home.withdraw",
+    "defaultMessage": "取款"
+  }
+]

@@ -1,0 +1,71 @@
+@import "~jxTheme/base";
+
+.formContainer {
+  padding: 0 5% 3rem 5%;
+  //background:rgba(239,239,239,0.69);
+}
+
+.title {
+  font-size: 1.33rem;
+  color: rgba(51, 51, 51, 1);
+  margin: 0.83rem 0 0.75rem 0;
+  span {
+    color: #dd041f;
+    padding-left: 0.33rem;
+  }
+}
+
+.input {
+  height: 3.17rem !important;
+  min-height: 3.17rem;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 0 0.17rem 0.67rem 0 rgba(50, 51, 94, 0.18);
+  border-radius: 5px;
+  border: 0.08rem solid rgba(221, 221, 221, 1);
+  @47-input-style();
+  :global {
+    .am-list-line {
+      justify-content: space-between;
+    }
+    .am-list-line .am-list-extra {
+      text-align: left !important;
+    }
+  }
+}
+
+.numInput {
+  line-height: 3.17rem;
+  padding-left: 15px;
+}
+
+.systemButton {
+  margin: 2.5rem auto 0 auto;
+  height: 2.83rem;
+  background: rgba(13, 118, 208, 1);
+  border-radius: 5px;
+  @85-button-background();
+}
+
+.select {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 1.33rem 0.9rem 1.33rem;
+}
+
+.moneyItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6.17rem;
+  height: 3.25rem;
+  color: #999999;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(221, 221, 221, 1);
+  box-shadow: 0 0.17rem 0.67rem 0 rgba(50, 51, 94, 0.18);
+  border-radius: 5px;
+}
+
+.moneyItemActive {
+  color: rgba(13, 118, 208, 1);
+  border: 1px solid rgba(13, 118, 208, 1);
+}

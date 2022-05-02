@@ -1,0 +1,38 @@
+[
+  {
+    "id": "funds.amountMax",
+    "defaultMessage": "最大转账金额{balance}"
+  },
+  {
+    "id": "funds.platformToPlatform",
+    "defaultMessage": "平台转平台"
+  },
+  {
+    "id": "funds.transferInAmount",
+    "defaultMessage": "转入金额"
+  },
+  {
+    "id": "funds.amount",
+    "defaultMessage": "金额"
+  },
+  {
+    "id": "funds.entryAmount",
+    "defaultMessage": "请输入金额"
+  },
+  {
+    "id": "funds.amountThanZero",
+    "defaultMessage": "转账金额大于0"
+  },
+  {
+    "id": "common.all",
+    "defaultMessage": "全部"
+  },
+  {
+    "id": "funds.balance",
+    "defaultMessage": "余额"
+  },
+  {
+    "id": "funds.configTransfer",
+    "defaultMessage": "确认转账"
+  }
+]

@@ -1,0 +1,40 @@
+@import "~jxTheme/base";
+.container {
+  .addImageTopContain("login_bg");
+  background-color: #ffffff;
+  @86-login-background();
+}
+
+.navBar {
+  background: transparent !important;
+  :global {
+    .am-navbar-left-icon > div > div {
+      background: #ffffff;
+    }
+    .am-navbar-title {
+      color: #ffffff;
+    }
+  }
+}
+
+.formContainer {
+  background: #ffffff;
+  margin: jxRem(1.3) 5.5% 0 5.5%;
+  padding: 1.5rem 1.5rem;
+  border-radius:0.67rem;
+  overflow: hidden;
+  @118-register-panel-background();
+}
+
+.systemButton {
+  margin: 4rem auto 0 auto;
+  height: 2.83rem;
+  background: linear-gradient(
+    211deg,
+    rgba(64, 188, 249, 1) 0%,
+    rgba(13, 118, 208, 1) 100%
+  );
+  border-radius: 5px;
+  font-size: 1.17rem;
+  @85-button-background();
+}

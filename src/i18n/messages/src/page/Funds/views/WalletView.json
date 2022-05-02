@@ -1,0 +1,22 @@
+[
+  {
+    "id": "funds.refreshAmount",
+    "defaultMessage": "刷新余额成功"
+  },
+  {
+    "id": "funds.retrieveAmount",
+    "defaultMessage": "金额回收成功"
+  },
+  {
+    "id": "founds.wallet",
+    "defaultMessage": "主钱包"
+  },
+  {
+    "id": "founds.countryMoney",
+    "defaultMessage": "MYR"
+  },
+  {
+    "id": "funds.allIn",
+    "defaultMessage": "回收"
+  }
+]

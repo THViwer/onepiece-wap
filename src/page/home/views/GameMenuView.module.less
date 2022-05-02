@@ -1,0 +1,184 @@
+@import "~jxTheme/base";
+
+.container {
+  background: #ffffff;
+  border-radius: 0 0 11px 11px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.07);
+  border-bottom: 0;
+  @90-platform-container-background();
+}
+.container2 {
+  width: 100%;
+  height: 4.5rem;
+  position: relative;
+}
+
+.line2 {
+  //position: absolute;
+  //bottom: 0;
+  //width: 100%;
+  //height: 0.42rem;
+  //background: rgba(13, 118, 208, 0.24);
+}
+
+.dsfGameContainer {
+  padding: 0 1rem;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(
+    360deg,
+    rgba(13, 118, 208, 1) 0%,
+    rgba(29, 72, 144, 1) 100%
+  );
+  color: #ffffff;
+  font-size: 1.08rem;
+  border-bottom: 2px solid #fecc00;
+  @7-navigation-background();
+  @12-navigation-item-text-color();
+}
+
+.dsfGameItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1 1;
+  line-height: 1.1rem;
+}
+
+.dsfGameItemActive {
+  background: linear-gradient(
+    360deg,
+    rgba(254, 204, 0, 1) 0%,
+    rgba(217, 144, 1, 1) 100%,
+    rgba(225, 141, 3, 1) 100%
+  );
+  color: #25406d;
+  @8-navigation-item-active-background();
+  @10-navigation-item-active-text-color();
+}
+
+.menuLogo {
+  margin-top: 0.5rem;
+  width: 2.17rem;
+  height: 2.17rem;
+}
+
+.menuLogoActive {
+  background-color: #25406d ;
+  @9-1-navigation-item-active-icon-color();
+}
+
+.sportOn {
+  .addImageMask("icon_home_menu_sports_on", @app-img-base, #fff, "png");
+  @9-navigation-item-active-icon-color();
+}
+
+.sportOff {
+  .addImageMaskNoColor("icon_home_menu_sports_off", @app-img-base);
+}
+
+.liveOn {
+  .addImageMask("icon_home_menu_livecasino_on", @app-img-base, #fff, "png");
+  @9-navigation-item-active-icon-color();
+}
+
+.liveOff {
+  .addImageMaskNoColor("icon_home_menu_livecasino_off", @app-img-base);
+}
+
+.slotOn {
+  .addImageMask("icon_home_menu_slots_on", @app-img-base, #fff, "png");
+  @9-navigation-item-active-icon-color();
+}
+
+.slotOff {
+  .addImageMaskNoColor("icon_home_menu_slots_off", @app-img-base);
+}
+
+.fishingOn {
+  .addImageMask("icon_home_menu_fishing_on", @app-img-base, #fff, "png");
+  @9-navigation-item-active-icon-color();
+}
+
+.fishingOff {
+  .addImageMaskNoColor("icon_home_menu_fishing_off", @app-img-base);
+}
+
+.bottomLine {
+  width: 6.5rem;
+  height: 0.42rem;
+}
+
+.bottomLineActive {
+  //background: rgba(13, 118, 208, 1);
+  //transform: skew(-45deg);
+}
+
+.gameListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgba(237, 237, 237, 1);
+  border-radius: 0.67rem;
+  margin: 3%;
+  padding: 0 3%;
+  @90-1-platform-container-background();
+  //height: 17rem;
+}
+
+.gameInfoItem {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  font-size: 1rem;
+  color: rgba(108, 123, 138, 1);
+  padding-right: 1%;
+  padding-left: 1.5%;
+  border-bottom: 1px solid #ddd;
+  &.noLine {
+    border: 0;
+  }
+  border-bottom: 1px solid @97-game-middle-color;
+}
+
+.itemTipIcon {
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  width: 20px;
+  height: 30px;
+}
+
+.itemNewTip {
+  .addImageContain("game_new", @app-img-base, "gif");
+}
+
+.itemHotTip {
+  .addImageContain("game_hot", @app-img-base, "gif");
+}
+
+.gameInfoLogo {
+  height: 6.6rem;
+  border-radius: 0.7rem;
+  margin-top: 15px;
+}
+
+.gameText {
+  margin: 0.4rem 0 0.6rem 0;
+  .text-ellipsis();
+  @13-platform-name-color();
+}
+
+.line3 {
+  height: 1.42rem;
+  background: linear-gradient(
+    180deg,
+    rgba(238, 238, 238, 0) 0%,
+    rgba(216, 216, 216, 0.49) 100%
+  );
+  opacity: 0.85;
+}

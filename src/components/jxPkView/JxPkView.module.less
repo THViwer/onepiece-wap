@@ -1,0 +1,68 @@
+@import "../../theme/base";
+
+.statePk {
+  height: 5rem;
+  width: 4rem;
+  padding: 0.6rem;
+  font-weight: bold;
+  font-size: 1.7rem;
+  margin-right: 2px;
+  box-sizing: border-box;
+}
+
+.pkBase {
+  width: 2.2rem;
+  height: 2rem;
+}
+
+.pk10Count(@count) when (@count > 0) {
+  .pk10Count((@count - 1));
+  & when (@count<10) {
+    .pk10State0@{count} {
+      .addImageMask("@{count}", @img-pk-path);
+    }
+  }
+
+  & when (@count>9) {
+    .pk10State@{count} {
+      .addImageMask("@{count}", @img-pk-path);
+    }
+  }
+}
+
+@pk-red: #d33c3c;
+@pk-black: black;
+
+.pk10Count(13);
+
+.statePk1 {
+  .addImageContain("pk_top_heitao", @img-pk-path);
+  color: @pk-black;
+  .pkBase {
+    background-color: @pk-black;
+  }
+}
+
+.statePk2 {
+  .addImageContain("pk_top_taoxin", @img-pk-path);
+  color: @pk-red;
+  .pkBase {
+    background-color: @pk-red;
+  }
+}
+
+.statePk3 {
+  .addImageContain("pk_top_meihua", @img-pk-path);
+  color: @pk-black;
+  .pkBase {
+    background-color: @pk-black;
+  }
+}
+
+.statePk4 {
+  .addImageContain("pk_top_fangkuai", @img-pk-path);
+  color: @pk-red;
+  .pkBase {
+    background-color: @pk-red;
+  }
+}

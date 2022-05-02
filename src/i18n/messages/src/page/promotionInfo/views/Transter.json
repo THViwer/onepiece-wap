@@ -1,0 +1,14 @@
+[
+  {
+    "id": "funds.promotionAmount",
+    "defaultMessage": "优惠金额"
+  },
+  {
+    "id": "user.involvedNow",
+    "defaultMessage": "Get involved now"
+  },
+  {
+    "id": "user.playNow",
+    "defaultMessage": "PLAY NOW"
+  }
+]

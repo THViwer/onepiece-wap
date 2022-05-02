@@ -1,0 +1,10 @@
+[
+  {
+    "id": "user.playNow",
+    "defaultMessage": "PLAY NOW"
+  },
+  {
+    "id": "home.hotGame",
+    "defaultMessage": "Most played of the month"
+  }
+]

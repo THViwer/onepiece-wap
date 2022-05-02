@@ -1,0 +1,78 @@
+@import "~jxTheme/base";
+.container {
+  height: 100%;
+  width: 100%;
+  :global {
+    .am-tab-bar-bar {
+      height: 5rem ;
+      @95-mainTab-background();
+    }
+    .am-tab-bar-bar-hidden-bottom {
+      bottom: -5rem !important;
+      height: 0;
+    }
+  }
+}
+
+.iconBgItem {
+  width: 3rem;
+  height: 2.8rem;
+}
+
+.iconBgItemActive {
+  .addImageTopContain("tabItem_bg", @theme-img-path);
+}
+
+.iconItem {
+  width: 1.67rem;
+  height: 1.54rem;
+}
+
+.iconHome {
+  .addImageContain("HOME_2", @app-img-base);
+}
+
+.iconHomeActive {
+  .addImageMask("HOME_1", @theme-img-path,#0d76d0,"png");
+  @16-main-tab-active-icon-color();
+}
+
+.iconClassify {
+  .addImageContain("FUNDS_2", @app-img-base);
+}
+
+.iconClassifyActive {
+  .addImageMask("FUNDS_1", @theme-img-path,#0d76d0,"png");
+  @16-main-tab-active-icon-color();
+}
+
+.iconFind {
+  .addImageContain("PROMOTON_2", @app-img-base);
+}
+
+.iconFindActive {
+  .addImageMask("PROMOTON_1", @theme-img-path,#0d76d0,"png");
+  @16-main-tab-active-icon-color();
+}
+
+.iconDown {
+  .addImageContain("download_2", @app-img-base);
+}
+
+.iconDownActive {
+  .addImageMask("download_1", @theme-img-path,#0d76d0,"png");
+  @16-main-tab-active-icon-color();
+}
+
+.iconMine {
+  .addImageContain("ACCOUNT_2", @app-img-base);
+}
+
+.iconMineActive {
+  .addImageMask("ACCOUNT_1", @theme-img-path,#0d76d0,"png");
+  @16-main-tab-active-icon-color();
+}
+
+.iconLive{
+  .addImageContain("livechat1", @app-img-base);
+}

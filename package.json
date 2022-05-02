@@ -1,0 +1,131 @@
+{
+  "name": "game",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "7.7.0",
+    "@babel/plugin-proposal-decorators": "7.7.0",
+    "@hot-loader/react-dom": "16.11.0",
+    "antd-mobile": "2.3.1",
+    "apisauce": "1.1.1",
+    "axios": "0.19.2",
+    "babel-plugin-import": "1.12.2",
+    "babel-plugin-react-intl": "5.1.2",
+    "bcryptjs": "2.4.3",
+    "blueimp-md5": "2.12.0",
+    "chalk": "2.4.2",
+    "cheerio": "1.0.0-rc.3",
+    "classnames": "2.2.6",
+    "cross-env": "6.0.3",
+    "d3-timer": "1.0.10",
+    "dayjs": "1.8.17",
+    "ee-argv": "1.0.2",
+    "exec-sh": "0.3.4",
+    "fingerprintjs2sync": "1.5.5",
+    "form-data": "3.0.0",
+    "fscreen": "1.0.2",
+    "history-events": "1.0.4",
+    "http-proxy-middleware": "0.20.0",
+    "husky": "3.0.9",
+    "inquirer": "7.0.0",
+    "inquirer-autocomplete-prompt": "1.0.1",
+    "jenkins": "0.27.0",
+    "js-base64": "2.5.1",
+    "jscrambler-webpack-plugin": "5.4.0",
+    "less": "3.10.3",
+    "less-loader": "5.0.0",
+    "lint-staged": "9.4.3",
+    "lodash": "4.17.15",
+    "mobx": "4.14.1",
+    "mobx-react": "6.1.4",
+    "mobx-react-intl": "1.4.0",
+    "mobx-utils": "5.5.2",
+    "nuka-carousel": "4.5.13",
+    "number-precision": "1.3.2",
+    "ora": "4.0.3",
+    "prettier": "1.18.2",
+    "prop-types": "15.7.2",
+    "qrcode.react": "1.0.0",
+    "rc-form": "2.4.11",
+    "react": "16.9.0",
+    "react-copy-to-clipboard": "5.0.2",
+    "react-dom": "16.9.0",
+    "react-files": "2.4.8",
+    "react-gtm-module": "2.0.8",
+    "react-hammerjs": "1.0.1",
+    "react-helmet": "5.2.1",
+    "react-hot-loader": "4.12.18",
+    "react-image": "2.2.1",
+    "react-intl": "3.6.0",
+    "react-livechat": "1.1.1",
+    "react-loadable": "5.5.0",
+    "react-native-rsa": "0.0.3",
+    "react-resize-detector": "4.2.1",
+    "react-scripts": "3.2.0",
+    "react-snap": "1.23.0",
+    "react-transition-group": "4.3.0",
+    "rmc-feedback": "2.0.0",
+    "rmc-list-view": "latest",
+    "screenfull": "5.0.2",
+    "shelljs": "0.8.3",
+    "ua-parser-js": "0.7.20",
+    "uuid": "3.3.3",
+    "vconsole": "3.3.4",
+    "webpack-bundle-analyzer": "3.6.0",
+    "webstorage-polyfill": "1.0.1",
+    "xml-js": "1.6.11"
+  },
+  "reactSnap": {
+    "cacheAjaxRequests": true,
+    "minifyHtml": {
+      "collapseWhitespace": false,
+      "removeComments": false
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,less,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "scripts": {
+    "start": "cross-env CLIENT=u996 PORT=7300 react-app-rewired start",
+    "clientStart": "cross-env node devConfig --START",
+    "clientRelease": "cross-env node devConfig --RELEASE",
+    "clientALLRelease": "cross-env node devConfig --ALL_RELEASE",
+    "build": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build --analyze",
+    "release": "cross-env GENERATE_SOURCEMAP=false react-app-rewired build && react-snap && node updateClientConfig.js && yarn run push",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "manage:translations": "node ./translationRunner.js",
+    "push": "ssh root@94.237.64.70  /opt/service/del_html.sh m.gpgaming88.com\nscp -r build/* root@94.237.64.70:/opt/html/m.gpgaming88.com",
+    "wgw88-release": "cross-env PUBLIC_URL=/m/ CLIENT=u996 GENERATE_SOURCEMAP=false react-app-rewired build && react-snap && yarn run wgw88-push",
+    "wgw88-push": "ssh root@193.200.134.198  /opt/service/del_html.sh m.wgw88.com\nscp -r build/* root@193.200.134.198:/opt/html/m.wgw88.com"
+  },
+  "eslintConfig": {
+    "extends": "react-app",
+    "parserOptions": {
+      "ecmaFeatures": {
+        "legacyDecorators": true
+      }
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "customize-cra": "0.9.1",
+    "react-app-rewired": "2.1.5",
+    "react-intl-cra": "0.3.4",
+    "react-intl-translations-manager": "5.0.3"
+  }
+}

@@ -1,0 +1,22 @@
+[
+  {
+    "id": "home.welcome",
+    "defaultMessage": "欢迎您"
+  },
+  {
+    "id": "home.centerWallet",
+    "defaultMessage": "主钱包"
+  },
+  {
+    "id": "home.deposits",
+    "defaultMessage": "充值"
+  },
+  {
+    "id": "home.withdraw",
+    "defaultMessage": "取款"
+  },
+  {
+    "id": "home.transfer",
+    "defaultMessage": "转账"
+  }
+]

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>png</title>
+    <script>
+      function urlQueryString(name) {
+        // let reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+        let r = window.location.search.substr(1).replace(name + "=", "");
+        return r;
+      }
+      var url = urlQueryString("url");
+      window.document.write("<script src='" + url + "' /><\/script>");
+    </script>
+  </head>
+  <body>
+    <div id="pngCasinoGame"></div>
+  </body>
+</html>

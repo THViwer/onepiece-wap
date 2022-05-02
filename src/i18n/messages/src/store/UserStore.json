@@ -1,0 +1,10 @@
+[
+  {
+    "id": "common.appUpdate",
+    "defaultMessage": "平台维护中"
+  },
+  {
+    "id": "funds.amountThanZero",
+    "defaultMessage": "请输入大于0金额"
+  }
+]

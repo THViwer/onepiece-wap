@@ -1,0 +1,54 @@
+[
+  {
+    "id": "user.username",
+    "defaultMessage": "用户名"
+  },
+  {
+    "id": "user.password",
+    "defaultMessage": "密码"
+  },
+  {
+    "id": "user.promoteCode",
+    "defaultMessage": "邀请码"
+  },
+  {
+    "id": "user.entryUsername",
+    "defaultMessage": "请输入用户名"
+  },
+  {
+    "id": "user.usernameErr",
+    "defaultMessage": "用户名错误(4-20位数字和字母)"
+  },
+  {
+    "id": "user.entryPassword",
+    "defaultMessage": "请输入密码"
+  },
+  {
+    "id": "user.configPassword",
+    "defaultMessage": "确认密码"
+  },
+  {
+    "id": "register.errorHasName",
+    "defaultMessage": "用户名已存在！"
+  },
+  {
+    "id": "user.entrySamePassword",
+    "defaultMessage": "请重复输入一样的密码"
+  },
+  {
+    "id": "common.step1",
+    "defaultMessage": "第一步"
+  },
+  {
+    "id": "user.basicInfo",
+    "defaultMessage": "基础信息"
+  },
+  {
+    "id": "user.next",
+    "defaultMessage": "下一步"
+  },
+  {
+    "id": "user.registerInfo",
+    "defaultMessage": "注册信息"
+  }
+]

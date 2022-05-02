@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>playtech</title>
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.js"></script>
+    <script type="text/javascript">
+      var mobiledomain = "fourblessings88.com";
+      var systemidvar = "424";
+
+      function opengame(game) {
+        var realMode = 1;
+        currentgame = game;
+        iapiRequestTemporaryToken(realMode, systemidvar, "GamePlay");
+      }
+
+      function launchMobileClient(temptoken) {
+        // var paramLanguage = $("#cbolanguage").val();
+        var paramLanguage = "en";
+
+        var clientUrl =
+          "//hub." +
+          mobiledomain +
+          "/igaming/" +
+          "?gameId=" +
+          currentgame +
+          "&real=1" +
+          "&username=GPGU_01000001HA" +
+          "&lang=" +
+          paramLanguage +
+          "&tempToken=" +
+          temptoken +
+          "&lobby=" +
+          location.href.substring(0, location.href.lastIndexOf("/") + 1) +
+          "lobby.html" +
+          "&support=" +
+          location.href.substring(0, location.href.lastIndexOf("/") + 1) +
+          "support.html" +
+          "&logout=" +
+          location.href.substring(0, location.href.lastIndexOf("/") + 1) +
+          "logout.html" +
+          "&deposit=" +
+          location.href.substring(0, location.href.lastIndexOf("/") + 1) +
+          "deposit.html";
+
+        console.log("clientUrl", clientUrl);
+        location.href = clientUrl;
+      }
+
+      function calloutGetTemporaryAuthenticationToken(response) {
+        if (response.errorCode) {
+          alert(
+            "Token failed. " +
+              response.playerMessage +
+              " Error code: " +
+              response.errorCode
+          );
+        } else {
+          launchMobileClient(response.sessionToken.sessionToken);
+        }
+      }
+
+      function calloutLoggedInPlayer(response) {
+        if (response.errorCode) {
+          document.location = "/";
+        } else {
+          if (response.username == "") {
+            document.location = "/";
+          }
+        }
+      }
+
+      function calloutLogout(response) {
+        sessionStorage.clear();
+        alert("Logout OK");
+        document.location = "/";
+      }
+    </script>
+
+    <script>
+      $(function() {
+        var gameInfo = JSON.parse(localStorage.getItem("Playtech"));
+        console.log(gameInfo);
+        var loginPath = gameInfo["loginPath"];
+        var gamePath = gameInfo["gamePath"];
+        var username = gameInfo["username"];
+        var password = gameInfo["password"];
+        var language = gameInfo["language"];
+        var gameId = gameInfo["game"];
+
+        $.ajax({
+          url: loginPath,
+          dataType: "script",
+          cache: true
+        }).done(function() {
+          iapiSetCallout("Login", calloutLogin);
+
+          iapiSetCallout(
+            "GetTemporaryAuthenticationToken",
+            calloutGetTemporaryAuthenticationToken
+          );
+          iapiSetCallout("Logout", calloutLogout);
+          iapiSetCallout("GetLoggedInPlayer", calloutLoggedInPlayer);
+          opengame(gameId);
+
+          iapiGetLoggedInPlayer(1);
+
+          var token = login(1);
+          console.log("token", token);
+          // });
+        });
+
+        function login(realMode) {
+          iapiSetClientPlatform("mobile&deliveryPlatform=HTML5");
+          iapiLogin(username, password, realMode, language);
+        }
+        function logout(allSessions, realMode) {
+          iapiLogout(allSessions, realMode);
+        }
+        function calloutLogin(response) {
+          if (response.errorCode) {
+            alert("Login failed, " + response.errorText);
+          } else {
+            window.location = gamePath;
+          }
+        }
+        function calloutLogout(response) {
+          if (response.errorCode) {
+            alert("Logout failed, " + response.errorCode);
+          } else {
+            alert("Logout OK");
+          }
+        }
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

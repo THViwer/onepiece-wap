@@ -1,0 +1,38 @@
+[
+  {
+    "id": "funds.depositDetails",
+    "defaultMessage": "转账详情"
+  },
+  {
+    "id": "funds.amount",
+    "defaultMessage": "金额"
+  },
+  {
+    "id": "funds.depositTime",
+    "defaultMessage": "充值时间"
+  },
+  {
+    "id": "funds.withdrawDetails",
+    "defaultMessage": "取款详情"
+  },
+  {
+    "id": "funds.withdrawTime",
+    "defaultMessage": "取款时间"
+  },
+  {
+    "id": "funds.promotionDetails",
+    "defaultMessage": "优惠详情"
+  },
+  {
+    "id": "funds.promotionAmount",
+    "defaultMessage": "优惠金额"
+  },
+  {
+    "id": "funds.operatorTime",
+    "defaultMessage": "操作时间"
+  },
+  {
+    "id": "fund.remarks",
+    "defaultMessage": "备注"
+  }
+]

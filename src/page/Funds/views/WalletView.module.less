@@ -1,0 +1,74 @@
+@import "~jxTheme/base";
+
+.container {
+  color: #ffffff;
+  margin: 0 auto 0 auto;
+  width: 87.2%;
+  height: 12.5rem;
+  .addImageCover("wallet_bg");
+ // padding-bottom: 2.5rem;
+  border-radius: 5px 5px 0 0;
+  @59-funds-background();
+}
+
+.title {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.33rem;
+  @60-main-wallet-text-color();
+}
+
+.countryMoney {
+  margin: 0.5rem 0.92rem 0 0;
+  color: #fa8f41;
+  @61-MYR-color();
+}
+
+.money {
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 2.58rem;
+  @62-money-color();
+}
+
+@keyframes animations1 {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    transform: rotate(90deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.oneDsfRefLogo-enter-active {
+  animation: animations1 0.8s linear infinite;
+}
+
+.iconRefresh {
+  margin: 0.5rem 0 0 0.58rem;
+  .addImageContain("Refresh");
+  width: 1.42rem;
+  height: 1.42rem;
+}
+
+.allInBack{
+  font-size:1.17rem;
+  margin-top: 0.8rem;
+  padding: 0.3rem 1rem;
+  border-radius: 10px;
+  background: #63baf3;
+  @63-restore-button-background();
+}

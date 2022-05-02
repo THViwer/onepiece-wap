@@ -1,0 +1,59 @@
+@import "~jxTheme/base";
+
+.iconBackPadding {
+  padding: jxRem(1) jxRem(3) jxRem(1) 0;
+}
+
+.iconBack {
+  .addImageMask("ic-navigationbar-back", @app-img-base, #b1b1b1, "png");
+  width: jxRem(1.6);
+  height: jxRem(1.6);
+  margin-left: 1rem;
+}
+
+:global(.am-navbar) {
+  background: white;
+  color: black;
+  @all-page-background();
+}
+
+.navBar {
+  display: flex;
+  flex-direction: column;
+  :global(.am-navbar) {
+    background: transparent;
+  }
+}
+
+.navBarLine {
+  flex: 1 1;
+}
+
+:global(.am-navbar-title) {
+  font-size: 1.3rem !important;
+  font-family: HiraKakuStdN-W8, HiraKakuStdN;
+  font-weight: normal;
+  color: rgba(33, 33, 33, 1);
+  //@all-page-nav-color();
+}
+
+:global {
+  .am-navbar-left {
+    padding-left: jxRem(0.36);
+  }
+  .am-navbar-right {
+    margin-right: jxRem(0.36);
+  }
+}
+
+.barIcon {
+  width: 1.67rem;
+  height: 1.67rem;
+}
+
+.barTextButton {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: @toolbar-button-color;
+}

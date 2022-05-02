@@ -1,0 +1,14 @@
+[
+  {
+    "id": "withdraw.errorNeedBet",
+    "defaultMessage": "打码量不足，还需打码量{value}"
+  },
+  {
+    "id": "withdraw.errorHasBank",
+    "defaultMessage": "银行卡已存在！"
+  },
+  {
+    "id": "withdraw.success",
+    "defaultMessage": "提款申请中"
+  }
+]

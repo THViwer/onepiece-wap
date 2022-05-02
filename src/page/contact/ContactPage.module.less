@@ -1,0 +1,82 @@
+@import "../../theme/base";
+
+.container {
+  width: 100%;
+  background: rgba(239, 239, 239, 1) !important;
+  opacity: 0.68;
+}
+
+.item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 15rem;
+  margin: 0 1rem;
+  overflow: hidden;
+  img {
+    margin-top: 1rem;
+    width: 13rem;
+    height: 13rem;
+  }
+  @109-game-list-background();
+}
+
+.icoWeChat {
+  width: 3.33rem;
+  height: 3.33rem;
+  .addImageContain("WeChat");
+  .addImageMaskNoColor("WeChat", @app-img-base);
+  @46-select-bank-icon-color();
+}
+
+.icoWhatsApp {
+  width: 3.33rem;
+  height: 3.33rem;
+  .addImageContain("WhatsApp");
+  .addImageMaskNoColor("WhatsApp", @app-img-base);
+  @46-select-bank-icon-color();
+}
+
+.icoLiveChat {
+  width: 3.33rem;
+  height: 3.33rem;
+  .addImageContain("icon_liveChat");
+  .addImageMaskNoColor("icon_liveChat", @app-img-base);
+  @46-select-bank-icon-color();
+}
+
+.contactBox {
+  display: flex;
+  padding-left: 2.08rem;
+  padding-right: 2.63rem;
+}
+
+.contactIcon {
+  width: calc(100vw - 25.83rem);
+  padding: 1.73rem 0;
+  img {
+    width: 2.17rem;
+    height: 2rem;
+  }
+}
+
+.contactContent {
+  width: 100%;
+  border-bottom: 0.08rem solid #d8d8d8;
+  padding: 1.73rem 0;
+  .title {
+    font-size: 1.08rem;
+    font-weight: 400;
+    color: rgba(1, 71, 141, 1);
+    line-height: 1.5rem;
+    @00about-text-color();
+  }
+  .subTitle {
+    font-size: 0.92rem;
+    font-weight: 400;
+    color: rgba(102, 102, 102, 1);
+    line-height: 1.33rem;
+    @131-about-content-color();
+  }
+  
+}

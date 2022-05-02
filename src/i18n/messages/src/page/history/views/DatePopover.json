@@ -1,0 +1,18 @@
+[
+  {
+    "id": "history.date1",
+    "defaultMessage": "今天"
+  },
+  {
+    "id": "history.date2",
+    "defaultMessage": "3天以内"
+  },
+  {
+    "id": "history.date3",
+    "defaultMessage": "一星期内"
+  },
+  {
+    "id": "history.date4",
+    "defaultMessage": "一个月内"
+  }
+]

@@ -1,0 +1,34 @@
+[
+  {
+    "id": "promotion.all",
+    "defaultMessage": "全部"
+  },
+  {
+    "id": "promotion.special",
+    "defaultMessage": "特别优惠"
+  },
+  {
+    "id": "promotion.rebate",
+    "defaultMessage": "反水"
+  },
+  {
+    "id": "promotion.first",
+    "defaultMessage": "首冲"
+  },
+  {
+    "id": "home.slot",
+    "defaultMessage": "老虎机"
+  },
+  {
+    "id": "home.live",
+    "defaultMessage": "真人视讯"
+  },
+  {
+    "id": "home.sport",
+    "defaultMessage": "体育"
+  },
+  {
+    "id": "home.fishing",
+    "defaultMessage": "捕鱼"
+  }
+]

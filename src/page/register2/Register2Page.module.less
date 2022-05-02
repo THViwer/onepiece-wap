@@ -1,0 +1,153 @@
+@import "~jxTheme/base";
+.container {
+  .addImageTopContain("join_bg");
+  background-color: #ffffff;
+  @81-register-background();
+}
+
+.input {
+  height: 3.17rem !important;
+  min-height: 3.17rem;
+  background: rgba(225, 225, 225, 1);
+  border-radius: 0.42rem;
+  border: 0.08rem solid rgba(211, 208, 208, 1);
+  color: #4a4a4a;
+  @47-input-style();
+  :global {
+    .am-list-line {
+      justify-content: space-between;
+    }
+    .am-list-line .am-list-extra {
+      text-align: left !important;
+      flex-basis: unset !important;
+    }
+  }
+}
+
+.userBankContainer > div {
+  flex: 1 1;
+}
+
+.title {
+  font-size: 1.2rem;
+  color: rgba(51, 51, 51, 1);
+  margin: 1.3rem 0 0.75rem 0;
+  @152-input-label-color();
+  span {
+    color: #dd041f;
+    padding-left: 0.33rem;
+  }
+}
+
+.navBar {
+  background: transparent !important;
+  :global {
+    .am-navbar-left-icon > div > div {
+      background: #ffffff;
+    }
+    .am-navbar-title {
+      color: #ffffff;
+    }
+  }
+}
+
+.tipContainer{
+  text-align: center;
+}
+
+.qiuLine {
+}
+.qiu {
+  width: 1.42rem;
+  height: 1.42rem;
+  background: rgba(253, 157, 0, 1);
+  border-radius: 50%;
+}
+
+.line {
+  height: 1px;
+  width: 49%;
+  background: rgba(253, 157, 0, 1);
+}
+
+.text1{
+  font-size:1.25rem;
+  color:rgba(253,157,0,1);
+  line-height:1.75rem;
+  margin: 0.67rem 0 0.5rem;
+}
+
+.text2{
+  font-size:1.17rem;
+  color:rgba(165,165,165,1);
+  line-height:1.67rem;
+  margin-bottom: 0.5rem;
+}
+
+.formContainer {
+  background: #ffffff;
+  margin: jxRem(1.3) 5.5% 0 5.5%;
+  padding: 1.5rem 0;
+  border-radius: 0.67rem;
+  overflow: hidden;
+  @118-register-panel-background();
+}
+
+.formContainer2 {
+  padding: 0 1.5rem;
+  overflow: hidden;
+}
+
+.systemButton {
+  margin: 4rem auto 0 auto;
+  height: 2.83rem;
+  background: linear-gradient(
+    270deg,
+    rgba(249, 212, 35, 1) 0%,
+    rgba(248, 54, 0, 1) 100%
+  );
+  border-radius: 5px;
+  font-size: 1.17rem;
+}
+
+.pickItem {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.malaysia {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  .addImageContain("Malaysia", @app-img-base);
+}
+
+.indonesia {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  .addImageContain("Indonesia", @app-img-base);
+}
+
+.thailand {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  .addImageContain("Thailand", @app-img-base);
+}
+
+.vietnam {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  .addImageContain("Vietnam", @app-img-base);
+}
+
+.singapore {
+  margin-right: 10px;
+  width: 24px;
+  height: 24px;
+  .addImageContain("Singapore", @app-img-base);
+}
+

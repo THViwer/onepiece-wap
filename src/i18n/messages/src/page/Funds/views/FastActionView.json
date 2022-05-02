@@ -1,0 +1,14 @@
+[
+  {
+    "id": "home.deposits",
+    "defaultMessage": "充值"
+  },
+  {
+    "id": "home.withdraw",
+    "defaultMessage": "提款"
+  },
+  {
+    "id": "home.history",
+    "defaultMessage": "历史"
+  }
+]
